@@ -1,0 +1,6 @@
+C:\Users\wenas\RiderProjects\Actividad_1_PSP\Actividad_1_PSP\obj\Debug\Actividad_1_PSP.csproj.AssemblyReference.cache
+C:\Users\wenas\RiderProjects\Actividad_1_PSP\Actividad_1_PSP\obj\Debug\Actividad_1_PSP.csproj.CoreCompileInputs.cache
+C:\Users\wenas\RiderProjects\Actividad_1_PSP\Actividad_1_PSP\bin\Debug\Actividad_1_PSP.exe
+C:\Users\wenas\RiderProjects\Actividad_1_PSP\Actividad_1_PSP\bin\Debug\Actividad_1_PSP.pdb
+C:\Users\wenas\RiderProjects\Actividad_1_PSP\Actividad_1_PSP\obj\Debug\Actividad_1_PSP.exe
+C:\Users\wenas\RiderProjects\Actividad_1_PSP\Actividad_1_PSP\obj\Debug\Actividad_1_PSP.pdb
