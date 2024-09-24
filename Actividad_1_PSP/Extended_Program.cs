@@ -1,69 +1,66 @@
 using System;
 using System.Collections.Generic;
 
-namespace Actividad_1_PSP
+public class ExtendedProgram
 {
-    public class ExtendedProgram
+    static void MainExtended()
     {
-        static void MainExtended()
-        {
-        }
     }
+}
 
-    class Character
+    class Character2
     {
         public string Name { get; set; }
         private int MaxHitPoints { get; set; }
         private int BaseDamage { get; set; }
         private int BaseArmor { get; set; }
-        private List<ITem> LstItems { get; set; }
+        private List<ITem2> LstItems { get; set; }
     }
 
-    internal interface ITem
+    internal interface ITem2
     {
-        void Apply(Character character);
+        void Apply2(Character2 character);
     }
 
-    abstract class Weapon : ITem
+    abstract class Weapon2 : ITem2
     {
         public string Name { get; set; }
         public int Damage { get; set; }
-        public abstract void Apply(Character character);
+        public abstract void Apply2(Character2 character);
     }
 
-    abstract class Protection : ITem
+    abstract class Protection2 : ITem2
     {
         public string Name { get; set; }
         public int Armor { get; set; }
 
-        public abstract void Apply(Character character);
+        public abstract void Apply2(Character2 character);
     }
 
-    class Axe : Weapon
+    class Axe2 : Weapon2
     {
-        public override void Apply(Character character)
+        public override void Apply2(Character2 character)
         {
         }
     }
 
-    class Sword : Weapon
+    class Sword2 : Weapon2
     {
-        public override void Apply(Character character)
+        public override void Apply2(Character2 character)
         {
         }
     }
 
-    class Helmet : Protection
+    class Helmet2 : Protection2
     {
-        public override void Apply(Character character)
+        public override void Apply2(Character2 character)
         {
         }
     }
 
-    class Shield : Protection
+    class Shield2 : Protection2
     {
-        public override void Apply(Character character)
+        public override void Apply2(Character2 character)
         {
         }
     }
-}
