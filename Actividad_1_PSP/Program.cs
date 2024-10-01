@@ -1,18 +1,25 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+
 class Program
 {
     static void Main()
-    {
+    { 
+        Character personaje1 = new Character("Personaje1", 35, 15,10);
+
+        Console.WriteLine("Tests de pj:");
+        
+        Console.WriteLine(personaje1.ToString());
     }
 }
 
-class Character
+class Character(string name, int MaxHitPoints,int BaseDamage,int BaseArmor)
 {
-    public string Name { get; set; }
-    private int MaxHitPoints { get; set; }
-    private int BaseDamage { get; set; }
-    private int BaseArmor { get; set; }
-    private List<Item> LstItems { get; set; }
+    public string Name = name;
+    private int MaxHitPoints = MaxHitPoints;
+    private int BaseDamage = BaseDamage;
+    private int BaseArmor = BaseArmor;
+    private List<ITem> LstItems;
 
     public int Attack(int baseDamage, int baseArmor)
     {
@@ -34,52 +41,54 @@ class Character
         return damageReceived;
     }
 
-    internal interface Item
-    {
-        void Apply(Character character);
-    }
-
-    abstract class Weapon : Item
-    {
-        public string Name { get; set; }
-        public int Damage { get; set; }
-        public abstract void Apply(Character character);
-    }
-
-    abstract class Protection : Item
-    {
-        public string Name { get; set; }
-        public int Armor { get; set; }
-
-        public abstract void Apply(Character character);
-    }
-
-    class Axe : Weapon
-    {
-        public override void Apply(Character character)
-        {
-        }
-    }
     
-    class Sword : Weapon
-    {
-        public override void Apply(Character character)
-        {
-        }
-    }
+}
 
-    class Helmet : Protection
-    {
-        public override void Apply(Character character)
-        {
-        }
-    }
+interface ITem
+{
+    void Apply(Character character);
+}
 
-    class Shield : Protection
+abstract class Weapon : ITem
+{
+    public string Name { get; set; }
+    public int Damage { get; set; }
+    public abstract void Apply(Character character);
+}
+
+abstract class Protection : ITem
+{
+    public string Name { get; set; }
+    public int Armor { get; set; }
+
+    public abstract void Apply(Character character);
+}
+
+class Axe : Weapon
+{
+    public override void Apply(Character character)
     {
-        public override void Apply(Character character)
-        {
-        }
+    }
+}
+    
+class Sword : Weapon
+{
+    public override void Apply(Character character)
+    {
+    }
+}
+
+class Helmet : Protection
+{
+    public override void Apply(Character character)
+    {
+    }
+}
+
+class Shield : Protection
+{
+    public override void Apply(Character character)
+    {
     }
 }
 
