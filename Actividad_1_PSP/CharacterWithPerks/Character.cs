@@ -67,4 +67,3 @@ namespace Actividad_1_PSP.CharacterWithPerks;
             LstItems.Add(item);
         }
     }
-}

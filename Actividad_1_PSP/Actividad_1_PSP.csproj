@@ -50,7 +50,6 @@
         <Compile Include="CharacterWithPerks\Shield.cs" />
         <Compile Include="CharacterWithPerks\Sword.cs" />
         <Compile Include="CharacterWithPerks\Weapon.cs" />
-        <Compile Include="Extended_Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
