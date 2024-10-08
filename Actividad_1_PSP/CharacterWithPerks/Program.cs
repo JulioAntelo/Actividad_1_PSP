@@ -17,9 +17,12 @@ class Program
         Axe axe = new Axe { Name = "Hacha de batalla", Damage = 15 };
         hero.EquipItem(axe);
 
-        Helmet helmet = new Helmet { Name = "Casco de acero", Armor = 5 };
+        Helmet helmet = new Helmet { Name = "Casco de acero", Armor = 10 };
         hero.EquipItem(helmet);
 
+        Pet pet = new Pet("Diablillo",10);
+        hero.EquipPet(pet);
+        
         Console.WriteLine("El personaje ataca a un enemigo...");
         int damage = hero.Attack();
         Console.WriteLine($"Daño infligido: {damage}");
