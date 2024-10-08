@@ -45,6 +45,7 @@
         <Compile Include="CharacterWithPerks\Character.cs" />
         <Compile Include="CharacterWithPerks\Helmet.cs" />
         <Compile Include="CharacterWithPerks\Item.cs" />
+        <Compile Include="CharacterWithPerks\Pets.cs" />
         <Compile Include="CharacterWithPerks\Program.cs" />
         <Compile Include="CharacterWithPerks\Protection.cs" />
         <Compile Include="CharacterWithPerks\Shield.cs" />

@@ -12,6 +12,7 @@ namespace Actividad_1_PSP.CharacterWithPerks;
         private int BaseDamage { get; set; }
         private int BaseArmor { get; set; }
         private List<IItem> LstItems;
+        private List<Pet> LstPet;
     
         // Constructor
         public Character(string name, int maxHitPoints, int baseDamage, int baseArmor)
@@ -22,6 +23,7 @@ namespace Actividad_1_PSP.CharacterWithPerks;
             BaseDamage = baseDamage;
             BaseArmor = baseArmor;
             LstItems = new List<IItem>();
+            LstPet = new List<Pet>();
         }
     
         // Método de ataque
