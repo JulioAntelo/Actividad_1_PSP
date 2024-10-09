@@ -3,12 +3,11 @@ using System.Xml.Schema;
 
 namespace Actividad_1_PSP.CharacterWithPerks;
 
-class Pet
+abstract class Pet : IPet
 {
     public string Name{ get; set; }
     public int addedDamage{ get; set; }
     
-    public abstract void Apply(Character character);
 
     
     public Pet(string name, int AddedDamage)
@@ -16,4 +15,6 @@ class Pet
         Name = name;
         addedDamage = AddedDamage;
     }
+
+    public abstract void Apply(Character character);
 }

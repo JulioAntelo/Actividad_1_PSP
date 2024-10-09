@@ -43,9 +43,11 @@
     <ItemGroup>
         <Compile Include="CharacterWithPerks\Axe.cs" />
         <Compile Include="CharacterWithPerks\Character.cs" />
+        <Compile Include="CharacterWithPerks\Companion.cs" />
         <Compile Include="CharacterWithPerks\Helmet.cs" />
+        <Compile Include="CharacterWithPerks\Ipet.cs" />
         <Compile Include="CharacterWithPerks\Item.cs" />
-        <Compile Include="CharacterWithPerks\Pets.cs" />
+        <Compile Include="CharacterWithPerks\Pet.cs" />
         <Compile Include="CharacterWithPerks\Program.cs" />
         <Compile Include="CharacterWithPerks\Protection.cs" />
         <Compile Include="CharacterWithPerks\Shield.cs" />

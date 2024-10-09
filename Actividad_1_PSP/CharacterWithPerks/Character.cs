@@ -14,7 +14,7 @@ class Character
 
     public List<IItem> LstItems;
 
-    private List<Pet> LstPet;
+    private List<Companion> LstCompanions;
 
     // Constructor
     public Character(string name, int maxHitPoints, int baseDamage, int baseArmor)
@@ -25,13 +25,13 @@ class Character
         BaseDamage = baseDamage;
         BaseArmor = baseArmor;
         LstItems = new List<IItem>();
-        LstPet = new List<Pet>();
+        LstCompanions = new List<Companion>();
     }
 
     // Método de ataque
     public int Attack()
     {
-        return SearchForWeapon() + BaseDamage;
+        return SearchForWeapon() + SearchForCompanion() +BaseDamage;
     }
 
     // Método de defensa
@@ -73,10 +73,10 @@ class Character
     }
     
     // Equipar una pet
-    public void EquipPet(Pet pet)
+    public void EquipPet(Companion companion)
     {
-        pet.Apply(this);
-        LstPet.Add(pet);
+        companion.Apply(this);
+        LstCompanions.Add(companion);
     }
 
     private int SearchForWeapon()
@@ -99,6 +99,17 @@ class Character
                 ExtraProtection += protection.Armor;
         } 
         return ExtraProtection;
+    }
+    
+    private int SearchForCompanion()
+    {
+        int AddedDamage = 0;
+        foreach (var compa in LstCompanions)
+        {
+            if (compa is Companion companion)
+                AddedDamage += companion.addedDamage;
+        } 
+        return AddedDamage;
     }
                 
 }
