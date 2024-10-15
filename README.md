@@ -1,0 +1,1 @@
+Para solucionar el problema de las mascotas he creado la interfaz IPet para una funcion Apply() y asi mantener una estructura parecida a la de los items, haciendo asi luego una clase Pet, luego creando una subclase de OfensiveCompanion que representa una pet que te da efectos ofensivos a la hora de combatir.
