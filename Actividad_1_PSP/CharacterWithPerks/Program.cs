@@ -20,8 +20,8 @@ class Program
         Helmet helmet = new Helmet { Name = "Casco de acero", Armor = 10 };
         hero.EquipItem(helmet);
 
-        Companion companion = new Companion("Diablillo", 10);
-        hero.EquipPet(companion);
+        OfensiveCompanion ofensiveCompanion = new OfensiveCompanion("Diablillo", 10);
+        hero.EquipPet(ofensiveCompanion);
         
         Console.WriteLine("El personaje ataca a un enemigo...");
         int damage = hero.Attack();

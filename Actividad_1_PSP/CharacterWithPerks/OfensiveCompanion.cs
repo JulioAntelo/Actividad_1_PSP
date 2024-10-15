@@ -1,8 +1,8 @@
 namespace Actividad_1_PSP.CharacterWithPerks;
 
-class Companion : Pet
+class OfensiveCompanion : Pet
 {
-    public Companion(string name, int AddedDamage) : base(name, AddedDamage)
+    public OfensiveCompanion(string name, int AddedDamage) : base(name, AddedDamage)
     {
         
         
