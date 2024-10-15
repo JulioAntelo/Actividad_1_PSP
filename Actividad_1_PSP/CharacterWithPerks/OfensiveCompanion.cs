@@ -10,6 +10,5 @@ class OfensiveCompanion : Pet
 
     public override void Apply(Character character)
     {
-        // Aplicar efectos del escudo al personaje
     }
 }
